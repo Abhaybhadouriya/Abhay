@@ -1,11 +1,9 @@
 import React ,{useState }from 'react';
 import styles from'../css/ChromeCard.module.css';
-import { Document, Page } from 'react-pdf';
 import Draggable from 'react-draggable';
 import { Resizable } from "re-resizable";
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import { ReactCalculator } from "simple-react-calculator";
 import Clock from 'react-clock';
 import 'react-clock/dist/Clock.css';
 import Modal from 'react-modal';

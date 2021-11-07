@@ -1,6 +1,5 @@
 import React ,{useState }from 'react';
 import styles from'../css/ChromeCard.module.css';
-import { Document, Page } from 'react-pdf';
 import Draggable from 'react-draggable';
 import { Resizable } from "re-resizable";
 import styles1 from './css/About.module.css'

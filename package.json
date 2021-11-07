@@ -10,7 +10,6 @@
     "postinstall": "cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib ./public"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^2.0.20",
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
     "net": "^1.0.2",
@@ -24,10 +23,7 @@
     "react-drag-resize": "^0.1.4",
     "react-draggable": "^4.4.4",
     "react-mac-calculator": "^2.1.2",
-    "react-modal": "^3.14.3",
-    "react-pdf": "^5.5.0",
-    "serverless-mysql": "^1.5.4",
-    "simple-react-calculator": "^0.2.1"
+    "react-modal": "^3.14.3"
   },
   "devDependencies": {
     "eslint": "7.32.0",
