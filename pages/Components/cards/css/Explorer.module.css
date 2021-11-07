@@ -1,0 +1,100 @@
+.diskdrivediv{
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  color: rgb(79, 81, 83);
+  text-decoration: solid;
+}
+.diskdrivelist{
+   flex-wrap: wrap;
+   display: flex;
+}
+.diskdrivelistname{
+    /* flex-direction: row; */
+    display: flex;
+    flex-wrap: nowrap;
+    color: rgb(2, 73, 226);
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.drivediv{
+    flex-direction: row;
+     display: flex;
+     margin: 10px;
+     padding: 10px;
+     border-radius: 5px;
+}
+.drivediv:hover{
+    background-color: rgb(154, 205, 240);
+}
+.drivedivinner{
+    flex-direction: column;
+     display: flex;
+     padding-top: 10px;
+}
+
+.drivediv1{
+    flex-direction: row;
+     display: flex;
+     padding: 10px;
+     border-radius: 5px;
+}
+.bterror{
+     width: 100%;
+     font-size: 20px;
+     padding: 2px;
+     border: none;
+     margin-top: 2px;
+     color: beige;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color: rgb(201, 58, 58);
+}
+.bterror:hover{
+    background-color: rgb(107, 41, 41);
+}
+.imgEdrive{
+   width: 260px;
+   border-radius: 5px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ 
+}
+
+.diskEdrivelist{
+ overflow: auto;
+ flex-wrap: wrap;
+ display: flex;
+ height: 80vh;
+}
+.documentdrivesearchbar{
+    height: 6vh;
+    width: 100%;
+    background-color: rgb(236, 235, 231);
+    flex-direction: row;
+    display: flex;
+    padding-right: 10px;
+}
+.diskdriveDdiv{
+    flex-direction: row;
+    display: flex;
+    overflow: auto;
+    height: 80vh;
+    padding: 10px;
+}
+.diskdriveDdivI{
+    flex-direction: column;
+    display: flex;
+    min-width: 240px;
+    overflow: hidden;
+}
+.diskdriveDdivIname{
+    flex-direction: row;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.diskViewerIcons{
+    width: 36px;
+}

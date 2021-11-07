@@ -1,0 +1,93 @@
+.pdf_drive{
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    /* flex-direction: column; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    padding: 10px;
+    overflow: auto;
+    text-decoration: solid;
+
+}
+.cardpdf:hover{
+    transform: scale(1.03);
+}
+.cardpdf{
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4); */
+    border: .5px solid rgb(156, 154, 154);
+    border-radius: 5px;
+    flex-direction: column;
+    display: flex;
+    font-family: sans-serif;
+    margin: 10px;
+    width: 240px;
+    color: rgb(79, 81, 83);
+    height: fit-content;
+    cursor: pointer;
+   
+}
+.imgpdf{
+  width: 100%;
+  height: 160px;
+  
+}
+
+.detailscardpdf{
+  flex-direction: column;
+  display: flex;
+  padding: 5px;
+
+}
+.worddocviewer{
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    flex-direction: rom;
+    display: flex;
+    /* flex-wrap: wrap; */ 
+    height: 80vh;
+    padding: 10px;
+    overflow: auto;
+}
+.worddocviewerlisttab{
+flex-direction: column;
+display: flex;
+padding: 5px;
+color: rgb(79, 81, 83);
+width: 20%;
+border-right: 1px solid rgb(43, 38, 38);
+}
+.worddocviewerlisttabitems{
+    flex-direction: row;
+    display: flex;
+    color: rgb(79, 81, 83);
+    text-decoration: solid;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.worddocviewerlisttabitems:hover{
+    transform: scale(1.1);
+}
+.docViewerIcons{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.worddocviewerIframetab{
+    flex-direction: column;
+display: flex;
+padding: 5px;
+color: rgb(79, 81, 83);
+width: 80%;
+overflow: auto;
+
+}
+.docViewerIframe{
+    
+  width: 100%;
+ 
+  
+}
