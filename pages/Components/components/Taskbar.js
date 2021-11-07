@@ -34,7 +34,7 @@ const Taskbar = (props) => {
             <div className={styles.icon_div}>
                 <img onClick={()=>{alert("wifi")}} className={styles.icon_taskbar} src="/img/wifi.png"  alt="wifi" id="img_taskbar"/>   
                 <img onClick={()=>{alert("speaker")}} className={styles.iconbattery_taskbar} src="/img/speaker.png"  alt="speaker" id="img_taskbar"/>             
-                <img onClick={()=>{alert("battery")}} className={styles.iconbattery_taskbar} src="/img/battery.png"  alt="battery" id="img_taskbar"/>             
+                <img onClick={()=>{alert("battery")}} className={styles.iconbattery_taskbar}  src="/img/battery.png"  alt="battery" id="img_taskbar"/>             
                 
             </div>
                 <div className={styles.time_tasbar} id="time_tasbar"> 
