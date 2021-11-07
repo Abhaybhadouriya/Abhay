@@ -22,10 +22,10 @@ const Taskbar = (props) => {
         <div className={styles.taskBar} id="taskBar">
             <div className={styles.img_div}>        
                 <img onClick={() =>props.es6Function('Windows')} className={styles.img_taskbar} src="/img/win.png"  alt="windows" id="img_taskbar"/>   
-                <img onClick={()=>{props.es6Function('Chrome')}} className={styles.img_taskbar} src="/img/Chromaaa.png"  alt="chrome" id="img_taskbar"/>             
+                <img onClick={()=>{props.es6Function('Chrome')}} className={styles.img_taskbar} src="/img/chromaaa.png"  alt="chrome" id="img_taskbar"/>             
                 <img onClick={()=>{props.es6Function('Explorer')}} className={styles.img_taskbar} src="/img/exploler.png"  alt="exploler" id="img_taskbar"/>             
                 <img onClick={()=>{props.es6Function('Word')}} className={styles.img_taskbar} src="/img/word.png"  alt="word" id="img_taskbar"/>             
-                <img onClick={()=>{props.es6Function('Setting')}} className={styles.img_taskbar} src="/img/Setinga.png"  alt="setting" id="img_taskbar"/>
+                <img onClick={()=>{props.es6Function('Setting')}} className={styles.img_taskbar} src="/img/setinga.png"  alt="setting" id="img_taskbar"/>
                 <img onClick={()=>{props.es6Function('About')}} className={styles.img_taskbar} src="/img/about.jpg"  alt="setting" id="img_taskbar"/>
             
             </div>
