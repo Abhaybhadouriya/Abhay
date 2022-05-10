@@ -570,7 +570,7 @@ const ShowMainChromeTab = () => {
           </li>
         </ul>
         <b></b>
-        <a href="https://devtube.in" target="_blank">
+        <a href="https://devtube.in" rel="noreferrer" target="_blank">
           <button
             className={styles2.btbrowser}
          
@@ -608,7 +608,7 @@ const ShowMainChromeTab = () => {
             Role :- <b>Web developer, Database Manager, Social Media Manager</b>
           </li>
         </ul>
-        <a href="https://gurujikenotes.com/CosmaticServices/" target="_blank">
+        <a href="https://gurujikenotes.com/CosmaticServices/" rel="noreferrer" target="_blank">
           <button className={styles2.btbrowser}>Click to View</button>
         </a>
       </div>
@@ -641,7 +641,7 @@ const ShowMainChromeTab = () => {
             Role :- <b>Full Stack Developer </b>
           </li>
         </ul>
-        <a href="https://gurujikenotes.com" target="_blank">
+        <a href="https://gurujikenotes.com" rel="noreferrer" target="_blank">
           <button className={styles2.btbrowser}>Click to View</button>
         </a>
       </div>
@@ -669,7 +669,7 @@ const ShowMainChromeTab = () => {
             Role:- <b>Developer , Content manager and Social Media Manager</b>
           </li>
         </ul>
-        <a href="https://poetankita.in/" target="_blank">
+        <a href="https://poetankita.in/" rel="noreferrer" target="_blank">
           <button
             className={styles2.btbrowser}
           
@@ -702,7 +702,7 @@ const ShowMainChromeTab = () => {
             Role:- <b> Web Developer and Database Administrator</b>
           </li>
         </ul>{" "}
-        <a href="https://educapsindia.com/" target="_blank">
+        <a href="https://educapsindia.com/" rel="noreferrer" target="_blank">
           <button
             className={styles2.btbrowser}
            
@@ -740,7 +740,7 @@ const ShowMainChromeTab = () => {
             Role :- <b>Web developer</b>
           </li>
         </ul>{" "}
-        <a href="http://covidtracker.gurujikenotes.com/" target="_blank">
+        <a href="http://covidtracker.gurujikenotes.com/" rel="noreferrer" target="_blank">
           <button
            
             className={styles2.btbrowser}
