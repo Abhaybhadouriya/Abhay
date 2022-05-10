@@ -32,7 +32,7 @@ const style_box1={
   background: "#fff",
   borderRadius: "4px",
   border: "1px solid #999",
-  overflow: "auto"
+  // overflow: "auto"
 }
 const style_box2={
   position: "relative",
@@ -44,7 +44,7 @@ const style_box2={
   background: "#fff",
   borderRadius: "4px",
   border: "1px solid #999",
-  overflow: "auto"
+  // overflow: "auto"
 }
 
 //  Window minimize and maximize css outer box
@@ -344,7 +344,7 @@ const Explorer = (props) => {
 
     
         <div style={sizewindow? popup_box1 :popup_box2} > 
-        <Draggable  >
+        <Draggable  handle='strong'>
         <Resizable size={{ width:width, height: height }}  
          onResizeStop={(e, direction, ref, d) => {
             setheigth({
@@ -364,6 +364,9 @@ const Explorer = (props) => {
                     &nbsp;&nbsp;Explorer
                     </span>
                 </div>
+                <strong style={{width:'100%'}}>
+
+            </strong>
                 <div className={styles.ChromeCard_bt_div}>
                     <div onClick={() =>props.handleClose('Explorer')} className={styles.ChromeCard_buttons}>
                       <span style={{fontSize:25}}>─</span>

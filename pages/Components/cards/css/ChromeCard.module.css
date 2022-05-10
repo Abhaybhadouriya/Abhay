@@ -6,7 +6,10 @@
     /* flex-direction: column; */
     display: flex;
     flex-wrap: wrap;
-    height: fit-content;
+    height: 80vh;
+    padding: 10px;
+    overflow: auto; 
+    text-decoration: solid;
     
   }
   
@@ -26,11 +29,11 @@
   }
   .carddiv{
 
-    flex-direction:'column';
+    /* flex-direction:'column';
     display:'flex';
     overflow-y: scroll;
     height: 85vh;
-    color: rgb(79, 81, 83);
+    color: rgb(79, 81, 83); */
     text-decoration: solid;
 
   }
