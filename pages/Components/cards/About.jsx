@@ -160,6 +160,35 @@ const About = (props) => {
                     marginBottom: 20,
                   }}
                 >
+                  <div
+                    style={{
+                      width: "100%",
+                      justifyContent: "center",
+                      display: "flex",
+                    }}
+                  >
+                    <a href="https://gurujikenotes.com/resume/Resume.pdf" rel="noreferrer" target="_blank">
+                      <button
+                        style={{
+                          fontSize: 25,
+                          paddingRight:25,
+                          paddingLeft:25,
+                          paddingTop:10,
+                          paddingBottom:10,
+                          margin: 10,
+                          cursor: "pointer",
+                          color: "white",
+                          border:'none',
+                          borderRadius:15,
+                          background:'#225878'
+                        }}
+                      >
+                        RESUME{" "}
+                        <i className="fa fa-download" aria-hidden="true"></i>
+                      </button>
+                    </a>
+                  </div>
+
                   <span style={{ fontSize: 35, textAlign: "center" }}>
                     ABOUT{" "}
                   </span>
@@ -571,12 +600,7 @@ const ShowMainChromeTab = () => {
         </ul>
         <b></b>
         <a href="https://devtube.in" rel="noreferrer" target="_blank">
-          <button
-            className={styles2.btbrowser}
-         
-          >
-            Click to View
-          </button>
+          <button className={styles2.btbrowser}>Click to View</button>
         </a>
       </div>
       <div className={styles2.imgdiv}>
@@ -608,7 +632,11 @@ const ShowMainChromeTab = () => {
             Role :- <b>Web developer, Database Manager, Social Media Manager</b>
           </li>
         </ul>
-        <a href="https://gurujikenotes.com/CosmaticServices/" rel="noreferrer" target="_blank">
+        <a
+          href="https://gurujikenotes.com/CosmaticServices/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <button className={styles2.btbrowser}>Click to View</button>
         </a>
       </div>
@@ -670,12 +698,7 @@ const ShowMainChromeTab = () => {
           </li>
         </ul>
         <a href="https://poetankita.in/" rel="noreferrer" target="_blank">
-          <button
-            className={styles2.btbrowser}
-          
-          >
-            Click to View
-          </button>
+          <button className={styles2.btbrowser}>Click to View</button>
         </a>
       </div>
       <div className={styles2.imgdiv}>
@@ -703,12 +726,7 @@ const ShowMainChromeTab = () => {
           </li>
         </ul>{" "}
         <a href="https://educapsindia.com/" rel="noreferrer" target="_blank">
-          <button
-            className={styles2.btbrowser}
-           
-          >
-            Click to View
-          </button>
+          <button className={styles2.btbrowser}>Click to View</button>
         </a>
       </div>
       <div className={styles2.imgdiv}>
@@ -740,13 +758,12 @@ const ShowMainChromeTab = () => {
             Role :- <b>Web developer</b>
           </li>
         </ul>{" "}
-        <a href="http://covidtracker.gurujikenotes.com/" rel="noreferrer" target="_blank">
-          <button
-           
-            className={styles2.btbrowser}
-          >
-            Click to View
-          </button>
+        <a
+          href="http://covidtracker.gurujikenotes.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button className={styles2.btbrowser}>Click to View</button>
         </a>
       </div>
     </div>

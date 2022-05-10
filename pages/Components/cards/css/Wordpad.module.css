@@ -5,8 +5,9 @@
     /* flex-direction: column; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: 80vh;
-    padding: 10px;
+    padding: 10px; 
     overflow: auto; 
     text-decoration: solid;
 
@@ -44,10 +45,10 @@
     transition: 0.3s;
     width: 100%;
     border-radius: 5px;
-    flex-direction: rom;
+    flex-direction: row;
     display: flex;
     /* flex-wrap: wrap; */ 
-    height: 80vh;
+    min-height: 80vh;
     padding: 10px;
     overflow: auto;
 }
@@ -91,3 +92,34 @@ overflow: auto;
  
   
 }
+
+@media screen and (max-width: 700px) {
+    .worddocviewer{
+        transition: 0.3s;
+        width: 100%;
+        border-radius: 5px;
+        flex-direction: column-reverse;
+        display: flex;
+        /* flex-wrap: wrap; */ 
+        height: 80vh;
+        padding: 10px;
+        overflow: auto;
+    }
+    .worddocviewerlisttab{
+    flex-direction: column;
+    display: flex;
+    padding: 5px;
+    color: rgb(79, 81, 83);
+    width: 100%;
+    border-right: 1px solid rgb(43, 38, 38);
+    }
+    .worddocviewerIframetab{
+        flex-direction: column;
+    display: flex;
+    padding: 5px;
+    color: rgb(79, 81, 83);
+    width: 100%;
+    overflow: auto;
+    
+    }
+  }

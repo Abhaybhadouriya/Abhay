@@ -203,7 +203,7 @@ const Wordpad = (props) => {
           </div>
         </div>
       </div>
-    );
+    ); 
   };
 
   const worddocviewer = () => {
@@ -228,7 +228,7 @@ const Wordpad = (props) => {
             <span
               onClick={(e) =>
                 changeCurrentDocViewerTab(
-                  "https://poetankita.in/wp-content/abhayresume.jpg"
+                  "https://gurujikenotes.com/resume/abhayresume.jpg"
                 )
               }
             >

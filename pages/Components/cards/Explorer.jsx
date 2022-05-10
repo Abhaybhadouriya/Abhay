@@ -204,7 +204,7 @@ const Explorer = (props) => {
                     </div>
                     <div className={styles1.diskdriveDdivIname}>
                         <img className={styles1.diskViewerIcons} src="/img/certificate/pdf.png" />
-                        <a rel="noreferrer" href="https://poetankita.in/wp-content/Abhay.pdf" target="_blank" download="abhayresume.jpg"><span style={{fontSize:25,marginLeft:5}}> Resume.pdf</span></a>
+                        <a rel="noreferrer" href="https://gurujikenotes.com/resume/Resume.pdf" target="_blank" download="abhayresume.jpg"><span style={{fontSize:25,marginLeft:5}}> Resume.pdf</span></a>
                     </div>
                     <div className={styles1.diskdriveDdivIname}>
                         <img className={styles1.diskViewerIcons} src="/img/certificate/jpg.png" />
