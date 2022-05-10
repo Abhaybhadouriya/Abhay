@@ -26,10 +26,11 @@
   }
   .carddiv{
 
-    flex-direction:'column';
-    display:'flex';
+    flex-direction:column;
+    display:flex;
     overflow: auto;
     height: fit-content;
+    max-height: 78vh;
   }
 
   .card1 {
