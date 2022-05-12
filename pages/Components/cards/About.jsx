@@ -92,11 +92,19 @@ const About = (props) => {
               className={styles.ChromeCard_navbar}
               style={{ backgroundColor: props.themecolor }}
             >
-              <div className={styles.ChromeCard_Name_div}>
-                <img src="/img/about.jpg" alt="chrome" id="img_taskbar" />
-                <span>&nbsp;&nbsp;About</span>
-              </div>
-              <strong style={{ width: "100%" }}></strong>
+              {" "}
+              <strong style={{ width: "100%", height: "100%" }}>
+                <div className={styles.ChromeCard_Name_div}>
+                  <img
+                    src="/img/about.jpg"
+                    alt="chrome"
+                    width="25"
+                    height="25"
+                    id="img_taskbar"
+                  />
+                  <span style={{ fontWeight: 300 }}>&nbsp;&nbsp;About</span>
+                </div>
+              </strong>
               <div className={styles.ChromeCard_bt_div}>
                 <div
                   onClick={() => props.handleClose("About")}
@@ -105,7 +113,14 @@ const About = (props) => {
                   <span style={{ fontSize: 25 }}>─</span>
                 </div>
                 <div onClick={sizeWindow} className={styles.ChromeCard_buttons}>
-                  <span style={{ fontSize: 25 }}>☐</span>
+                  <span
+                    style={{
+                      width: 30,
+                      height: 25,
+                      outline: "rgb(255, 255, 255) solid 2px",
+                      outlineOffset: "-5px",
+                    }}
+                  ></span>
                 </div>
                 <div
                   onClick={() => props.handleClose("About")}
@@ -167,20 +182,24 @@ const About = (props) => {
                       display: "flex",
                     }}
                   >
-                    <a href="https://gurujikenotes.com/resume/Resume.pdf" rel="noreferrer" target="_blank">
+                    <a
+                      href="https://gurujikenotes.com/resume/Resume.pdf"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <button
                         style={{
                           fontSize: 25,
-                          paddingRight:25,
-                          paddingLeft:25,
-                          paddingTop:10,
-                          paddingBottom:10,
+                          paddingRight: 25,
+                          paddingLeft: 25,
+                          paddingTop: 10,
+                          paddingBottom: 10,
                           margin: 10,
                           cursor: "pointer",
                           color: "white",
-                          border:'none',
-                          borderRadius:15,
-                          background:'#225878'
+                          border: "none",
+                          borderRadius: 15,
+                          background: "#225878",
                         }}
                       >
                         RESUME{" "}

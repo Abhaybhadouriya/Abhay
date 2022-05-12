@@ -209,11 +209,19 @@ const Windows = (props) => {
               className={styles.ChromeCard_navbar}
               style={{ backgroundColor: props.themecolor }}
             >
-              <div className={styles.ChromeCard_Name_div}>
-                <img src="/img/win.png" alt="chrome" id="img_taskbar" />
-                <span>&nbsp;&nbsp;Windows</span>
-              </div>
-              <strong style={{ width: "100%" }}></strong>
+              {" "}
+              <strong style={{ width: "100%", height: "100%" }}>
+                <div className={styles.ChromeCard_Name_div}>
+                  <img
+                    src="/img/win.png"
+                    width="25"
+                    height="25"
+                    alt="chrome"
+                    id="img_taskbar"
+                  />
+                  <span style={{ fontWeight: 300 }}>&nbsp;&nbsp;Windows</span>
+                </div>
+              </strong>
               <div className={styles.ChromeCard_bt_div}>
                 <div
                   onClick={() => {
@@ -224,7 +232,14 @@ const Windows = (props) => {
                   <span style={{ fontSize: 25 }}>─</span>
                 </div>
                 <div onClick={sizeWindow} className={styles.ChromeCard_buttons}>
-                  <span style={{ fontSize: 25 }}>☐</span>
+                  <span
+                    style={{
+                      width: 30,
+                      height: 25,
+                      outline: "rgb(255, 255, 255) solid 2px",
+                      outlineOffset: "-5px",
+                    }}
+                  ></span>
                 </div>
                 <div
                   onClick={() => props.handleClose("Windows")}

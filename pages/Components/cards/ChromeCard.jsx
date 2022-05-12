@@ -77,7 +77,6 @@ const ChromeCard = (props) => {
     setshowChromeTab(!showChromeTab);
   };
 
-  
   return (
     <div style={sizewindow ? popup_box1 : popup_box2}>
       <Draggable handle="strong">
@@ -97,11 +96,18 @@ const ChromeCard = (props) => {
               className={styles.ChromeCard_navbar}
               style={{ backgroundColor: props.themecolor }}
             >
-              <div className={styles.ChromeCard_Name_div}>
-                <img src="/img/chromaaa.png" alt="chrome" id="img_taskbar" />
-                <span>&nbsp;&nbsp;Chrome</span>
-              </div>
-              <strong style={{ width: "100%" }}></strong>
+              <strong style={{ width: "100%", height: "100%" }}>
+                <div className={styles.ChromeCard_Name_div}>
+                  <img
+                    src="/img/chromaaa.png"
+                    width="25"
+                    height="25"
+                    alt="chrome"
+                    id="img_taskbar"
+                  />
+                  <span style={{ fontWeight: 300 }}>&nbsp;&nbsp;Chrome</span>
+                </div>
+              </strong>{" "}
               <div className={styles.ChromeCard_bt_div}>
                 <div
                   onClick={() => props.handleClose("Chrome")}
@@ -110,7 +116,14 @@ const ChromeCard = (props) => {
                   <span style={{ fontSize: 25 }}>─</span>
                 </div>
                 <div onClick={sizeWindow} className={styles.ChromeCard_buttons}>
-                  <span style={{ fontSize: 25 }}>☐</span>
+                  <span
+                    style={{
+                      width: 30,
+                      height: 25,
+                      outline: "rgb(255, 255, 255) solid 2px",
+                      outlineOffset: "-5px",
+                    }}
+                  ></span>
                 </div>
                 <div
                   onClick={() => props.handleClose("Chrome")}
@@ -129,7 +142,7 @@ const ChromeCard = (props) => {
                 functionback={showChromeTabfun}
               />
             ) : (
-              <ShowMainChromeTab showChromeTabfun={showChromeTabfun}/>
+              <ShowMainChromeTab showChromeTabfun={showChromeTabfun} />
             )}
             {/* box div ended here */}
           </div>
@@ -174,9 +187,9 @@ const ShowMainChromeTab = (props) => {
           <span style={{ fontSize: 25, fontStyle: "bold" }}>DEVTUBE.in</span>
           <ul>
             <li>
-              DEVTUBE.in Provides customized youtube playlist of 100s of
-              courses by Total Views,playtime,likes of entire playlist and
-              provide certification of courses.
+              DEVTUBE.in Provides customized youtube playlist of 100s of courses
+              by Total Views,playtime,likes of entire playlist and provide
+              certification of courses.
             </li>
             <li>
               {" "}
@@ -214,9 +227,9 @@ const ShowMainChromeTab = (props) => {
           </span>
           <ul>
             <li>
-              COSMATIC SERVICES is a car servicing portal provides services
-              like Teflon polish, Rubbing Polish etc. Here User can book there
-              slot for servicing,user can manage there order.
+              COSMATIC SERVICES is a car servicing portal provides services like
+              Teflon polish, Rubbing Polish etc. Here User can book there slot
+              for servicing,user can manage there order.
             </li>
             <li>
               {" "}
@@ -253,8 +266,8 @@ const ShowMainChromeTab = (props) => {
           <ul>
             <li>
               Got <b>45,000+ visitors</b> within a month of launch. It provide
-              notes , videos lectures and minor projects. It is a community
-              type website. Currently we are getting about
+              notes , videos lectures and minor projects. It is a community type
+              website. Currently we are getting about
               <b> 20-25K visitors</b> per month.
             </li>
             <li>
@@ -284,22 +297,18 @@ const ShowMainChromeTab = (props) => {
             }}
             alt="imgbrowser"
           />
-          <span style={{ fontSize: 25, fontStyle: "bold" }}>
-            Poetankita.in
-          </span>
+          <span style={{ fontSize: 25, fontStyle: "bold" }}>Poetankita.in</span>
           <ul>
             <li>
-              Its a Blogging website for my sister to post stories, poetry,
-              and quotes. Here she post variety of content on different
-              different topics such as poetry,story and blogs in Hindi and
-              English{" "}
+              Its a Blogging website for my sister to post stories, poetry, and
+              quotes. Here she post variety of content on different different
+              topics such as poetry,story and blogs in Hindi and English{" "}
             </li>
             <li>
               Technology:- <b>Wordpress </b>
             </li>
             <li>
-              Role:-{" "}
-              <b>Developer , Content manager and Social Media Manager</b>
+              Role:- <b>Developer , Content manager and Social Media Manager</b>
             </li>
           </ul>
           <button
@@ -326,8 +335,8 @@ const ShowMainChromeTab = (props) => {
           <ul>
             <li>
               PHP/Java servlet developer at Educapsindia.com a education based
-              startup. EduCap is a leading firm, providing educational
-              training in PAN India in the field of advanced technologies.
+              startup. EduCap is a leading firm, providing educational training
+              in PAN India in the field of advanced technologies.
             </li>
             <li>
               Technology:- <b>PHP, JavaScript,Ajax, MySQL, Firebase</b>
@@ -354,13 +363,11 @@ const ShowMainChromeTab = (props) => {
             }}
             alt="imgbrowser"
           />
-          <span style={{ fontSize: 25, fontStyle: "bold" }}>
-            Covid Tracker
-          </span>
+          <span style={{ fontSize: 25, fontStyle: "bold" }}>Covid Tracker</span>
           <ul>
             <li>
-              Covid-19 live tracker. Display Corona case of States and
-              District wise in different categories like{" "}
+              Covid-19 live tracker. Display Corona case of States and District
+              wise in different categories like{" "}
               <b>
                 {" "}
                 Active, Recovered, Confirmed,Deaths and No of tests conducted.
@@ -387,6 +394,5 @@ const ShowMainChromeTab = (props) => {
     </div>
   );
 };
-
 
 export default ChromeCard;

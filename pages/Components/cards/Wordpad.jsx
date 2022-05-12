@@ -203,7 +203,7 @@ const Wordpad = (props) => {
           </div>
         </div>
       </div>
-    ); 
+    );
   };
 
   const worddocviewer = () => {
@@ -321,11 +321,19 @@ const Wordpad = (props) => {
               className={styles.ChromeCard_navbar}
               style={{ backgroundColor: props.themecolor }}
             >
-              <div className={styles.ChromeCard_Name_div}>
-                <img src="/img/word.png" alt="chrome" id="img_taskbar" />
-                <span>&nbsp;&nbsp;Wordpad</span>
-              </div>
-              <strong style={{ width: "100%" }}></strong>
+              {" "}
+              <strong style={{ width: "100%", height: "100%" }}>
+                <div className={styles.ChromeCard_Name_div}>
+                  <img
+                    src="/img/word.png"
+                    alt="chrome"
+                    width="25"
+                    height="25"
+                    id="img_taskbar"
+                  />
+                  <span style={{ fontWeight: 300 }}>&nbsp;&nbsp;Wordpad</span>
+                </div>
+              </strong>
               <div className={styles.ChromeCard_bt_div}>
                 <div
                   onClick={() => props.handleClose("Word")}
@@ -334,7 +342,14 @@ const Wordpad = (props) => {
                   <span style={{ fontSize: 25 }}>─</span>
                 </div>
                 <div onClick={sizeWindow} className={styles.ChromeCard_buttons}>
-                  <span style={{ fontSize: 25 }}>☐</span>
+                  <span
+                    style={{
+                      width: 30,
+                      height: 25,
+                      outline: "rgb(255, 255, 255) solid 2px",
+                      outlineOffset: "-5px",
+                    }}
+                  ></span>
                 </div>
                 <div
                   onClick={() => props.handleClose("Word")}

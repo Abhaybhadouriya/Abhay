@@ -31,7 +31,6 @@ const style_box2 = {
   overflow: "auto",
 };
 
-
 //  Window minimize and maximize css outer box
 
 const popup_box1 = {
@@ -294,7 +293,7 @@ const Settings = (props) => {
 
   return (
     <div style={sizewindow ? popup_box1 : popup_box2}>
-      <Draggable handle='strong'>
+      <Draggable handle="strong">
         <Resizable
           size={{ width: width, height: height }}
           onResizeStop={(e, direction, ref, d) => {
@@ -311,13 +310,19 @@ const Settings = (props) => {
               className={styles.ChromeCard_navbar}
               style={{ backgroundColor: props.themecolor }}
             >
-              <div className={styles.ChromeCard_Name_div}>
-                <img src="/img/setinga.png" alt="chrome" id="img_taskbar" />
-                <span>&nbsp;&nbsp;Setting</span>
-              </div>
-              <strong style={{width:'100%'}}>
-
-            </strong>
+              {" "}
+              <strong style={{ width: "100%", height: "100%" }}>
+                <div className={styles.ChromeCard_Name_div}>
+                  <img
+                    src="/img/setinga.png"
+                    width="25"
+                    height="25"
+                    alt="chrome"
+                    id="img_taskbar"
+                  />
+                  <span style={{ fontWeight: 300 }}>&nbsp;&nbsp;Setting</span>
+                </div>
+              </strong>
               <div className={styles.ChromeCard_bt_div}>
                 <div
                   onClick={() => props.handleClose("Setting")}
@@ -326,7 +331,14 @@ const Settings = (props) => {
                   <span style={{ fontSize: 25 }}>─</span>
                 </div>
                 <div onClick={sizeWindow} className={styles.ChromeCard_buttons}>
-                  <span style={{ fontSize: 25 }}>☐</span>
+                  <span
+                    style={{
+                      width: 30,
+                      height: 25,
+                      outline: "rgb(255, 255, 255) solid 2px",
+                      outlineOffset: "-5px",
+                    }}
+                  ></span>
                 </div>
                 <div
                   onClick={() => props.handleClose("Setting")}
@@ -349,7 +361,7 @@ const Settings = (props) => {
                   Change Wallpaper
                 </span>
               </div>
-              <div className={styles1.card}>
+              <div style={{justifyContent:'space-around',display:'flex'}} className={styles1.card}>
                 <div
                   style={{
                     flexDirection: "column",
@@ -566,7 +578,7 @@ const Settings = (props) => {
                   Change Theme{" "}
                 </span>
               </div>
-              <div className={styles1.card1}>
+              <div style={{justifyContent:'space-around',display:'flex'}} className={styles1.card1}>
                 <div
                   style={{
                     flexDirection: "column",
